@@ -26,7 +26,14 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     }
 
 
-    fun train (){
+    fun train (): Int{
 
+        if(mana>=5){
+            mana-=5
+
+            return spellPower + 1
+        }
+
+        else return 0 //not enough mana
     }
 }
