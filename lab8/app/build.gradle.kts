@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    id("org.jetbrains.dokka") version "2.2.0"
 }
 
 android {
@@ -14,6 +15,7 @@ android {
     defaultConfig {
         applicationId = "com.example.lab_8"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
